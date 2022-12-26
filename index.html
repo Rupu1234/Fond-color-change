@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content change</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <div id="color">
+     <input id="value">
+     <button id="btn">submit</button>
+     <h1 id="text">rupu</h1>
+    </div>
+</body>
+<script>
+   let btn=document.getElementById("btn")
+   btn.addEventListener("click",myfun)
+   
+   function myfun(){
+    let col=document.getElementById("text");
+    let int=document.getElementById("value")
+    col.style.color=int.value;
+    int.value="";
+   }
+</script>
+</html>
